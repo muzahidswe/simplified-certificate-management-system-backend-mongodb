@@ -24,6 +24,7 @@ app.use(express.json());
 
 // Routes
 app.use('/certificates', require('./routes/certificates'));
+app.use('/posts', require('./routes/posts'));
 
 app.listen(PORT, () => {
   logger.info(`Backend service is running on ${NODE_ENV} is running on port ${PORT}`);

@@ -1,4 +1,4 @@
-const sqlite3 = require('sqlite3').verbose();
+const { Pool } = require('pg'); // this is for PostgreSQL connection
 const {sendApiResult} = require('./helperController');
 const Certificates = require('../models/certificatesModel');
 
